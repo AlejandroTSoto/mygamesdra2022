@@ -1,4 +1,4 @@
-<img src="./MyGames.png"> </a>
+<img src="./frontend/src/assets/MyGames.png"> </a>
 
 # MyGamesDRA22
 
