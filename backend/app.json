@@ -1,6 +1,6 @@
 
 {
-    "name": "heroku-mercedes-app",
+    "name": "heroku-mygames-app",
     "buildpacks": [
       {
         "url": "heroku/gradle"
