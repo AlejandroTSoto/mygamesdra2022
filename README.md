@@ -1,3 +1,6 @@
+<p align="center"><a><img src="https://www.vectorlogo.zone/logos/angular/angular-ar21.png" width="600"></a></p>
+![MyGames](MyGames.png)
+
 # MyGamesDRA22
 
 En este proyecto se desarollará una aplicación con Angular haciendo uso de la [API de FreeToGame](https://www.freetogame.com/api-doc).
