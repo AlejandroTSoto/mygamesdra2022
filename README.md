@@ -21,7 +21,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd mercedesdra22
+  cd mygamesdra22
 ```
 ## Running Docker-compose.yml
 
