@@ -1,0 +1,47 @@
+h4 {
+  color: #fff;
+  font-weight: 600;
+}
+
+footer {
+  width: 100%;
+  background-color: #ffa600;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+}
+
+label {
+  color: #fff;
+  font-weight: 600;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.inside {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media(min-width:910px){
+  .inside{
+    margin-left: 200px;
+  }
+}
