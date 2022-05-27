@@ -1,4 +1,4 @@
-<p align="center"><a><img src="https://www.vectorlogo.zone/logos/angular/angular-ar21.png" width="600"></a></p>
+<p align="center"><a><img src="https://github.com/AlejandroTSoto/mygamesdra2022/MyGames.png" width="600"></a></p>
 ![MyGames](MyGames.png)
 
 # MyGamesDRA22
