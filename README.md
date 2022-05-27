@@ -1,5 +1,5 @@
 <p align="center"><a><img src="https://github.com/AlejandroTSoto/mygamesdra2022/MyGames.png" width="600"></a></p>
-![MyGames](MyGames.png)
+![MyGames](MyGames.png?raw=true "Title")
 
 # MyGamesDRA22
 
