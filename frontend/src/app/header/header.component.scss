@@ -1,0 +1,48 @@
+header {
+  width: 100%;
+  background-color: #151e94;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+input {
+  border: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.busqueda {
+  position: relative;
+  left: 400px;
+  margin-top: 37px;
+}
+
+.titulo {
+  position: relative;
+  left: 130px;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+.titulo:hover {
+  background-color: #131979;
+}
+
+.lupa {
+  width: 35px;
+  height: 25px;
+}
+
+@media(min-width:910px){
+  .header{
+    margin-left: 200px;
+  }
+}
+
