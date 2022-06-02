@@ -13,6 +13,8 @@ export class JuegoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /* Método que llama al método que llama a todos los juegos de la API */
+
   conseguirJuegos() {
     this.juegoService.getJuegos().subscribe(data => {
       console.log(data)
