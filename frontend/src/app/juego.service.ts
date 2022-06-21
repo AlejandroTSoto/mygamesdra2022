@@ -8,7 +8,6 @@ import { Observable } from 'rxjs';
 export class JuegoService {
 
   private url: string = "https://www.freetogame.com/api"
-  private urlCategory: string = "https://www.freetogame.com/api/games?category="
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -33,18 +32,18 @@ export class JuegoService {
 
   /* Método que buscará los juegos que sean de Estrategia */
   getJuegosStrategy() {
-    return this.http.get(`${this.urlCategory}strategy`, this.httpOptions)
+    return this.http.get(`${this.url}/games?category=strategy`, this.httpOptions)
   }
 
   /* Método que buscará los juegos que sean de Deportes */
   getJuegosSports() {
-    return this.http.get(`${this.url}sports`, this.httpOptions)
+    return this.http.get(`${this.url}/games?category=sports`, this.httpOptions)
   }
 
   /* Método que buscará los juegos que sean de Fantasía */
 
   getJuegosFantasy() {
-    return this.http.get(`${this.url}fantasy`, this.httpOptions)
+    return this.http.get(`${this.url}/games?category=fantasy`, this.httpOptions)
   }
 
 }
