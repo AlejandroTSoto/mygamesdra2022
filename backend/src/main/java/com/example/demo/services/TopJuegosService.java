@@ -12,6 +12,8 @@ import org.springframework.stereotype.Component;
 
 import com.example.demo.dto.TopJuegosDto;
 
+/* Se ha seguido el tutorial que se encuentra aquí https://ualdra.github.io/spring-scraping-101/ y se ha adaptado a mis necesidades*/
+
 @Component("topJuegosService")
 public class TopJuegosService {
     public List<TopJuegosDto> retrieveTopJuegos() {
