@@ -29,8 +29,8 @@ export class FavoritosComponent implements OnInit {
     })
   }
 
-  addJuego(j:Juego) {
-    this.juegos.push(j)
+  addJuego(juego:Juego) {
+    this.juegos.push(juego)
   }
 
 }

@@ -8,7 +8,7 @@ button {
   border: none;
 }
 
-.filtro {
+.filtro, .filtro-favoritos {
   background-color: transparent;
   border: none;
   width: 160px;
@@ -16,16 +16,9 @@ button {
   color: white;
 }
 
-.filtro-favoritos {
-  background-color: transparent;
-  border: none;
-  width: 160px;
-  height: 40px;
-  color: rgb(172, 5, 136);
-}
-
 .filtro-favoritos:hover {
   background-color: #131979;
+  color: rgb(255, 0, 200);
 }
 .filtro:hover {
   background-color: #131979;
