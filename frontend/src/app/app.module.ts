@@ -18,6 +18,9 @@ import { FavoritosComponent } from './favoritos/favoritos.component';
 import { FormsModule } from '@angular/forms';
 import { TopJuegosComponent } from './top-juegos/top-juegos.component';
 import { JuegoDetailComponent } from './juego-detail/juego-detail.component';
+import { FiltroStrategyComponent } from './filtro-strategy/filtro-strategy.component';
+import { FiltroSportsComponent } from './filtro-sports/filtro-sports.component';
+import { FiltroFantasyComponent } from './filtro-fantasy/filtro-fantasy.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { JuegoDetailComponent } from './juego-detail/juego-detail.component';
     HeaderComponent,
     FavoritosComponent,
     TopJuegosComponent,
-    JuegoDetailComponent
+    JuegoDetailComponent,
+    FiltroStrategyComponent,
+    FiltroSportsComponent,
+    FiltroFantasyComponent
   ],
   imports: [
     BrowserModule,
