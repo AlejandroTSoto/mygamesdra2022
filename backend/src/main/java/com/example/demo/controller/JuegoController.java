@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "https")
-@RequestMapping("/juego")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
+@RequestMapping("/favoritos")
 public class JuegoController {
 
     @Autowired
@@ -25,7 +25,7 @@ public class JuegoController {
         return repository.save(juego); 
     }
     @GetMapping(path = "")
-    public List<Juego> findByAll() {
+    public List<Juego> findAll() {
         return  repository.findAll(); 
     }
 

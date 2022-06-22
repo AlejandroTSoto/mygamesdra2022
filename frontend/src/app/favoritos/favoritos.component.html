@@ -1,0 +1,17 @@
+<div class = "container">
+  <h3>  Juegos Favoritos </h3>
+  <div *ngFor="let juego of juegos">
+    <div>
+      <img src={{juego.image}} height="100px" routerLink='/favoritos/{{juego.id}}'>
+    </div>
+    <ul>
+      <li routerLink='/favoritos/{{juego.id}}'>Título: {{juego.title}} </li>
+      <li routerLink='/favoritos/{{juego.id}}'>Género: {{juego.genre}}</li>
+      <li routerLink='/favoritos/{{juego.id}}'>Plataformas: {{juego.platform}}</li>
+      <li routerLink='/favoritos/{{juego.id}}'>Desarrolladores: {{juego.publisher}}</li>
+    </ul>
+    <button type="button" class="add-button" (click)="addJuego(juego); juego.title=''">
+      <img src="./assets/añadir.png" width="30px" height="30px">
+    </button>
+  </div>
+</div>

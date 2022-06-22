@@ -33,38 +33,40 @@ export class JuegoService {
     return this.http.get(`${this.url}/${title}`)
   }
 
-  /* Método que buscará los juegos que sean de Estrategia */
+  /* Método que buscará los juegos que sean de Estrategia de la API*/
   getJuegosStrategy() {
     return this.http.get(`${this.urlFiltros}strategy`, this.httpOptions)
   }
 
-  /* Método que buscará los juegos que sean de Deportes */
+  /* Método que buscará los juegos que sean de Deportes de la API */
   getJuegosSports() {
     return this.http.get(`${this.urlFiltros}sports`, this.httpOptions)
   }
 
-  /* Método que buscará los juegos que sean de Fantasía */
+  /* Método que buscará los juegos que sean de Fantasía de la API */
   getJuegosFantasy() {
-    return this.http.get(`${this.urlFiltros}fantasy/`, this.httpOptions)
+    return this.http.get(`${this.urlFiltros}fantasy`, this.httpOptions)
   }
 
-  /* Método que traerá los top juegos que se ha realizado con el scrapping */
+  /* Método que traerá los top juegos que se ha realizado con el scrapping BACKEND*/
   getTopJuegos(): Observable<any> {
-    return this.http.get(`${this.urlBackend}/topJuegos`, this.httpOptions);
+    return this.http.get(`${this.urlBackend}/topJuegos`);
   }
 
-  /* Método que añadirá un juego a la lista de favoritos */
+  /* Método que añadirá un juego a la lista de favoritos BACKEND*/
   postJuegoFavoritos(juego : Juego): void {
-    this.http.post<Juego>(`${this.urlBackend}/favoritos`, juego, this.httpOptions).subscribe();
+    this.http.post<Juego>(`${this.urlBackend}/favoritos`, juego);
   }
 
-  /* Método que mostrará la lista de favoritos */
+  /* Método que mostrará la lista de favoritos BACKEND*/
   getJuegosFavoritos(): Observable<Juego[]> {
     return this.http.get<Juego[]>(`${this.urlBackend}/favoritos`)
   }
 
+  /* Método que mostrará el id del juego BACKEND*/
+
   getJuegoId(id : number): Observable<Juego> {
-    return this.http.get<Juego>(`${this.urlBackend}/favoritos/`+id, this.httpOptions)
+    return this.http.get<Juego>(`${this.urlBackend}/favoritos/`+id)
   }
 
 }

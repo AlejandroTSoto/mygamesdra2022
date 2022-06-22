@@ -14,7 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { JuegoComponent } from './juego/juego.component';
+import { FavoritosComponent } from './favoritos/favoritos.component';
 import { FormsModule } from '@angular/forms';
 import { TopJuegosComponent } from './top-juegos/top-juegos.component';
 import { JuegoDetailComponent } from './juego-detail/juego-detail.component';
@@ -24,7 +24,7 @@ import { JuegoDetailComponent } from './juego-detail/juego-detail.component';
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    JuegoComponent,
+    FavoritosComponent,
     TopJuegosComponent,
     JuegoDetailComponent
   ],

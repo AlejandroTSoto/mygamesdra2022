@@ -16,9 +16,6 @@ public class Juego {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @NotBlank(message = "juegoId is mandatory")
-    private String juegoId;
-
     @NotBlank(message = "nombre is mandatory")
     private String nombre;
 
@@ -30,8 +27,7 @@ public class Juego {
 
     }
 
-    public Juego(String juegoId, String nombre, String imagen) {
-        this.juegoId = juegoId;
+    public Juego(String nombre, String imagen) {
         this.nombre = nombre;
         this.imagen = imagen;    
     }
@@ -42,14 +38,6 @@ public class Juego {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public String getJuegoId() {
-        return juegoId;
-    }
-
-    public void setJuegoId(String juegoId) {
-        this.juegoId = juegoId;
     }
 
     public String getNombre() {

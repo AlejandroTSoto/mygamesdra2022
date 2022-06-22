@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { Juego } from '../juego';
 import { JuegoService } from '../juego.service';
 
 @Component({
-  selector: 'app-juego',
-  templateUrl: './juego.component.html',
-  styleUrls: ['./juego.component.scss']
+  selector: 'app-favoritos',
+  templateUrl: './favoritos.component.html',
+  styleUrls: ['./favoritos.component.scss']
 })
-export class JuegoComponent implements OnInit {
+export class FavoritosComponent implements OnInit {
 
   juegos:Juego[]=[]
 
