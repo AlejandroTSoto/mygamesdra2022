@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "https")
-@RequestMapping("favoritos")
+@RequestMapping("/juego")
 public class JuegoController {
 
     @Autowired

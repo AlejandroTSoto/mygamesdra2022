@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Location } from '@angular/common';
 import { JuegoService } from '../juego.service';
 
 @Component({
@@ -11,7 +9,7 @@ import { JuegoService } from '../juego.service';
 export class TopJuegosComponent implements OnInit {
   topJuegos: any = [];
 
-  constructor( private route: Router, private juegoService: JuegoService, private location: Location) {
+  constructor(private juegoService: JuegoService) {
 
   }
 

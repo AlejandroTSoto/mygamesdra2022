@@ -54,7 +54,7 @@ export class JuegoService {
   }
 
   /* Método que añadirá un juego a la lista de favoritos */
-  postJuegoFavoritos(juego : Juego) {
+  postJuegoFavoritos(juego : Juego): void {
     this.http.post<Juego>(`${this.urlBackend}/favoritos`, juego, this.httpOptions).subscribe();
   }
 
