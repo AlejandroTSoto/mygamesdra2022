@@ -1,5 +1,5 @@
-<div class = "container">
-  <div><img src={{juego.image}}></div>
+<div class = "container" *ngIf="juego">
+  <div *ngIf="juego.image"><img src={{juego.image}}></div>
   <div>
     <ul>
       <li>Titulo: {{juego.title}}</li>
