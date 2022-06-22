@@ -10,6 +10,7 @@ import org.springframework.data.repository.query.Param;
 
 @RepositoryRestResource
 public interface JuegoRepository extends CrudRepository<Juego, Long> {
+    void añadirJuego(Juego juego);
     List<Juego> findByJuegoId(@Param("juegoId") String juegoId);
     List<Juego> findAll();
     void deleteByJuegoId(@Param("juegoId") String juegoId);

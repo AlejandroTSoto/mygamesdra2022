@@ -14,17 +14,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { SideListComponent } from './side-list/side-list.component';
 import { JuegoComponent } from './juego/juego.component';
 import { FormsModule } from '@angular/forms';
+import { TopJuegosComponent } from './top-juegos/top-juegos.component';
+import { JuegoDetailComponent } from './juego-detail/juego-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    SideListComponent,
-    JuegoComponent
+    JuegoComponent,
+    TopJuegosComponent,
+    JuegoDetailComponent
   ],
   imports: [
     BrowserModule,

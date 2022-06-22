@@ -21,7 +21,7 @@ public class TopJuegosService {
         List<TopJuegosDto> topJuegos = new ArrayList<>();
 
         try {
-            Document webPage = Jsoup.connect("https://howlongtobeat.com/stats")
+            Document webPage = Jsoup.connect("https://www.3djuegos.com/index.php?zona=top100")
                     .get();
                     Element tbody = webPage.getElementById("tb926").getElementsByTag("tbody").get(0);
             

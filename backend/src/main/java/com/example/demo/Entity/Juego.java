@@ -16,7 +16,7 @@ public class Juego {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @NotBlank(message = "Movie is mandatory")
+    @NotBlank(message = "juegoId is mandatory")
     private String juegoId;
 
     @NotBlank(message = "nombre is mandatory")

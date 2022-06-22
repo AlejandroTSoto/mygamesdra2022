@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { SideListComponent } from './side-list/side-list.component';
 import { JuegoComponent } from './juego/juego.component';
+import { TopJuegosComponent } from './top-juegos/top-juegos.component';
 
 const routes: Routes = [
-  {path:'footer', component: FooterComponent},
-  {path:'header', component: HeaderComponent},
-  {path:'sidelist', component: SideListComponent},
-  {path:'juego', component: JuegoComponent}
+  {path:'juego', component: JuegoComponent},
+  {path:'topJuegos', component: TopJuegosComponent}
 
 ];
 

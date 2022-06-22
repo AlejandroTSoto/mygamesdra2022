@@ -1,1 +1,14 @@
-
+<div class = "container">
+  <h3>  Juegos Favoritos </h3>
+  <div *ngFor="let juego of juegos">
+    <div>
+      <img src={{juego.image}} height="100px" routerLink='/favoritos/{{juego.id}}'>
+    </div>
+    <ul>
+      <li routerLink='/favoritos/{{juego.id}}'>Titulo: {{juego.title}} </li>
+      <li routerLink='/favoritos/{{juego.id}}'>Genero: {{juego.genre}}</li>
+      <li routerLink='/favoritos/{{juego.id}}'>Plataformas: {{juego.platform}}</li>
+      <li routerLink='/favoritos/{{juego.id}}'>Desarrolladores: {{juego.publisher}}</li>
+    </ul>
+  </div>
+</div>

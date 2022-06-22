@@ -8,8 +8,36 @@ button {
   border: none;
 }
 
+.filtro {
+  background-color: transparent;
+  border: none;
+  width: 160px;
+  height: 40px;
+  color: white;
+}
+
+.filtro-favoritos {
+  background-color: transparent;
+  border: none;
+  width: 160px;
+  height: 40px;
+  color: rgb(172, 5, 136);
+}
+
+.filtro-favoritos:hover {
+  background-color: #131979;
+}
+.filtro:hover {
+  background-color: #131979;
+}
+
 input {
   border: none;
+}
+
+.category {
+  display:flex;
+  flex-direction: row;
 }
 
 .container {
@@ -29,10 +57,6 @@ input {
   width: 200px;
   height: 100px;
   margin-left: 10px;
-}
-
-.titulo:hover {
-  background-color: #131979;
 }
 
 .lupa {
