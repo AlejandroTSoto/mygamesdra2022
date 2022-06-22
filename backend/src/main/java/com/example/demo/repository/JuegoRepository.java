@@ -9,7 +9,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource
 public interface JuegoRepository extends CrudRepository<Juego, Long> {
-    void añadirJuego(Juego juego);
     List<Juego> findAll();
-    
 }

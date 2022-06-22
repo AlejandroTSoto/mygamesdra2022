@@ -8,8 +8,12 @@ import { Juego } from './juego';
 })
 export class JuegoService {
 
-  private url: string = 'https://www.freetogame.com/api/games'
-  private urlFiltros: string = 'https://www.freetogame.com/api/games?category='
+  /*
+  Para solucionar el problema con la API, hacemos uso de la direccion que esta delante de la direccion API
+  Antes de poder usar la API, ponemos la direccion de delante sola en el buscador para poder activarlo de forma tempmoral
+  */
+  private url: string = 'https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games'
+  private urlFiltros: string = 'https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games?category='
   private urlBackend: string = 'http://localhost:8080/api'
 
   httpOptions = {

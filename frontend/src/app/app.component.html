@@ -1,4 +1,8 @@
 <app-header> </app-header>
+<div *ngFor="let juego of juegos">
+  {{juego.title}}
+</div>
+<router-outlet></router-outlet>
 <div class = "footer">
   <app-footer> </app-footer>
 </div>

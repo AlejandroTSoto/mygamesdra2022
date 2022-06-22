@@ -21,7 +21,7 @@ public class JuegoController {
     private JuegoRepository repository;
 
     @PostMapping(path = "")
-    public Juego añadirJuego(@RequestBody Juego juego) {
+    public Juego addJuego(@RequestBody Juego juego) {
         return repository.save(juego); 
     }
     @GetMapping(path = "")
