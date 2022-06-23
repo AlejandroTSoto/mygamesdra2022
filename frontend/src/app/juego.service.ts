@@ -26,15 +26,18 @@ export class JuegoService {
   constructor(private http : HttpClient) { }
 
   /* Método que traerá todos los juegos de la API */
-
   getJuegos() {
     return this.http.get(`${this.url}`)
   }
 
   /* Método que buscará los juegos con un nombre especifico de la API */
-
   searchJuego(title: string) {
     return this.http.get(`${this.url}/${title}`)
+  }
+
+  /*Método que buscará los juegos por id de la API*/
+  getJuegosPorId(id: number): Observable<Juego>{
+    return this.http.get<Juego>(`${this.url}/game?id=`+id, this.httpOptions)
   }
 
   /* Método que buscará los juegos que sean de Estrategia de la API*/
@@ -68,7 +71,6 @@ export class JuegoService {
   }
 
   /* Método que mostrará el id del juego BACKEND*/
-
   getJuegoId(id : number): Observable<Juego> {
     return this.http.get<Juego>(`${this.urlBackend}/favoritos/`+id)
   }

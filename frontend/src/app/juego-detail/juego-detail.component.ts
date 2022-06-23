@@ -13,6 +13,7 @@ export class JuegoDetailComponent implements OnInit {
   juego : Juego = {
     id: 0, title:"", image:"", genre:"", platform: "", publisher: ""
   }
+  image: any;
 
   constructor(private route:ActivatedRoute, private juegoService:JuegoService) { }
 

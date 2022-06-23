@@ -10,6 +10,7 @@ import { JuegoService } from '../juego.service';
 export class FiltroFantasyComponent implements OnInit {
 
   juegos: Juego[] = [];
+  juego!: Juego[];
   constructor(private juegoService:JuegoService){
 
   }
@@ -18,6 +19,10 @@ export class FiltroFantasyComponent implements OnInit {
       this.juegoService.getJuegosFantasy().subscribe((data)=>{
         this.juegos = data as Juego[];
       })
+  }
+
+  addJuego(juego:Juego) {
+    this.juegos.push(juego)
   }
 
 }

@@ -12,7 +12,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
-import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { FormsModule } from '@angular/forms';
@@ -25,7 +24,6 @@ import { FiltroFantasyComponent } from './filtro-fantasy/filtro-fantasy.componen
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
     HeaderComponent,
     FavoritosComponent,
     TopJuegosComponent,

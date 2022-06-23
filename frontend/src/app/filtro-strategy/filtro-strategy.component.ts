@@ -20,4 +20,10 @@ export class FiltroStrategyComponent implements OnInit {
       })
   }
 
+  addJuego(juego:Juego) {
+    this.juegos.push(juego)
+  }
+
+
+
 }

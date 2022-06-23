@@ -1,6 +1,23 @@
 .container {
   background-color: white;
+  margin-top: 40px;
+  text-align: center;
   border-style: dotted dashed solid double;
   border-color: #151e94;
+  color: #151e94;
+}
+.column {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+.title {
+  margin-top: 20px;
+  text-align: center;
+  size: 100px;
+  font-size:xx-large;
   color: #151e94;
 }

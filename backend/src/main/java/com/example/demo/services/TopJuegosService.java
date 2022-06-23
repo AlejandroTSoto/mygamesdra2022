@@ -21,17 +21,16 @@ public class TopJuegosService {
         List<TopJuegosDto> topJuegos = new ArrayList<>();
 
         try {
-            Document webPage = Jsoup.connect("https://www.3djuegos.com/index.php?zona=top100")
-                    .get();
-                    Element tbody = webPage.getElementById("tb926").getElementsByTag("tbody").get(0);
+            Document webPage = Jsoup.connect("https://www.3djuegos.com/index.php?zona=top100").get();
+            Element tbody = webPage.getElementById("tb926").getElementsByTag("tbody").get(0);
             
             List<Element> rows = tbody.children().subList(1, tbody.children().size());
 
             for (Element row : rows) {
                 
-                /* Si no hay etiquetas td, significa que no hay caracteristicas que enseñar */
                 Elements tds = row.getElementsByTag("td");
-                if(tds.isEmpty())
+
+                if (tds.size() < 5)
                     continue;
                 
                 /* Se llama a la posición td que queremos mostrar */

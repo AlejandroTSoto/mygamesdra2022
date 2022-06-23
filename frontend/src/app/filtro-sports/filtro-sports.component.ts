@@ -19,5 +19,8 @@ export class FiltroSportsComponent implements OnInit {
         this.juegos = data as Juego[];
       })
   }
+  addJuego(juego:Juego) {
+    this.juegos.push(juego)
+  }
 
 }

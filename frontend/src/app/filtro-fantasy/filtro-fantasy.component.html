@@ -1,8 +1,15 @@
 <div class="contaniner">
-  <div *ngFor="let juego of juegos">
-  {{juego.image}}
-  </div>
-  <div *ngFor="let juego of juegos">
-    {{juego.title}}
+  <div class="title"> Juegos de Fantasía </div>
+  <div class="bucle" *ngFor="let juego of juegos">
+    <div>{{juego.image}}</div>
+    <div class="column">
+      <div> <b> Titulo: </b> {{juego.title}} </div>
+      <button type="button" class="add-button" (click)="addJuego(juego)">
+        <img src="./assets/añadir.png" width="20px" height="20px">
+      </button>
     </div>
+  </div>
 </div>
+
+
+
