@@ -1,6 +1,4 @@
 .container {
-  display: flex;
-  flex-direction: row;
   background-color: white;
   margin-left: 20px;
   margin-top: 40px;
@@ -15,9 +13,7 @@
   color: #151e94;
 }
 .bucle {
-  display: flex;
-  flex-direction: column;
-  width: 390px;
+  float:left !important;
   border-style: groove;
   border-color: #151e94;
   margin-top: 30px;
@@ -25,6 +21,7 @@
   margin-left: 30px;
 }
 .imagen-info {
+  width: 390px;
   display: flex;
   flex-direction: row;
 }
