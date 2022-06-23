@@ -1,9 +1,17 @@
-<div class = "container">
-  <div class="title">  Juegos Favoritos </div>
-  <div *ngFor="let juego of juegos">
-    <div>
-      <img src={{juego.image}} height="100px">
+<div class="contaniner">
+  <div class="title"> Juegos Favoritos </div>
+  <div class="bucle" *ngFor="let juego of juegos">
+    <div class="imagen-info">
+      <img src={{juego.image}} height="200px" width="200px">
+      <div class="column">
+        <div class="infoPosition">
+          <b> Titulo: </b> {{juego.title}}
+          <b> Genero: </b> {{juego.genre}}
+          <b> Plataforma: </b> {{juego.platform}}
+          <b> Desarrollador: </b> {{juego.publisher}}
+        </div>
+      </div>
     </div>
-
   </div>
 </div>
+

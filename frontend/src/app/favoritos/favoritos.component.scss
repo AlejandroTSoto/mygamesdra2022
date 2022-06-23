@@ -1,19 +1,40 @@
 .container {
-  color: #151e94;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 40px;
   text-align: center;
-  margin-top: 20px;
-}
-
-button {
-  background-color: transparent;
-}
-
-.fotoJuego {
-  height: 300px;
-  width: 300px;
+  color: #151e94;
 }
 .title {
+  margin-top: 20px;
+  text-align: center;
   size: 100px;
   font-size:xx-large;
   color: #151e94;
+}
+.bucle {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  border-style: groove;
+  border-color: #151e94;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+.imagen-info {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: row;
+}
+.infoPosition {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  margin-left: 10px;
 }

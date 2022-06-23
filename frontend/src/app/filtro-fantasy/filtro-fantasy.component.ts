@@ -21,8 +21,9 @@ export class FiltroFantasyComponent implements OnInit {
       })
   }
 
-  addJuego(juego:Juego) {
-    this.juegos.push(juego)
+  addJuego(juego : Juego) {
+    this.juegoService.postJuegoFavoritos(juego).subscribe (juego => {
+      this.juegos.push(juego);
+    });
   }
-
 }

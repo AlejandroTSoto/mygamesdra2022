@@ -15,16 +15,8 @@ export class FavoritosComponent implements OnInit {
 
   ngOnInit(): void {
     this.juegoService.getJuegosFavoritos().subscribe(juegos => {
-
+      this.juegos = juegos as Juego[];
     });
-
-  }
-
-  /* Método que llama al método que llama a todos los juegos de la API*/
-  conseguirJuegos() {
-    this.juegoService.getJuegos().subscribe(data => {
-      console.log(data)
-    })
   }
 
 }
