@@ -1,18 +1,11 @@
 .container {
-  background-color: white;
-  margin-top: 40px;
-  text-align: center;
-  border-style: dotted dashed solid double;
-  border-color: #151e94;
-  color: #151e94;
-}
-.column {
   display: flex;
   flex-direction: row;
-}
-button {
-  border: none;
-  background-color: transparent;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 40px;
+  text-align: center;
+  color: #151e94;
 }
 .title {
   margin-top: 20px;
@@ -20,4 +13,36 @@ button {
   size: 100px;
   font-size:xx-large;
   color: #151e94;
+}
+.bucle {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  border-style: groove;
+  border-color: #151e94;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+.imagen-info {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: row;
+}
+.infoPosition {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+button {
+  border: none;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  right: 100%;
 }

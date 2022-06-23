@@ -17,7 +17,7 @@
 .bucle {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 390px;
   border-style: groove;
   border-color: #151e94;
   margin-top: 30px;
@@ -35,10 +35,14 @@
 .infoPosition {
   display: flex;
   flex-direction: column;
+  margin-top: 3px;
+  margin-left: 10px;
 }
 button {
   border: none;
   background-color: transparent;
   width: 35px;
   height: 35px;
+  position: relative;
+  right: 100%;
 }
