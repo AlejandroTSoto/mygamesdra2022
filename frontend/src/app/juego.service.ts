@@ -14,7 +14,7 @@ export class JuegoService {
   */
   private url: string = 'https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games'
   private urlFiltros: string = 'https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games?category='
-  private urlBackend: string = 'http://localhost:8081/api'
+  private urlBackend: string = 'http://localhost:8082/api'
 
   /*
   La direccion en la que se podrá ver /favoritos y /topJuegos será la de localhost:8081/api/lo que buscamos

@@ -10,7 +10,6 @@ import { JuegoService } from '../juego.service';
 export class FiltroFantasyComponent implements OnInit {
 
   juegos: Juego[] = [];
-  juego!: Juego[];
   constructor(private juegoService:JuegoService){
 
   }
