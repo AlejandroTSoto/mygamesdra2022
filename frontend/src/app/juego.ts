@@ -1,7 +1,7 @@
 export interface Juego {
   id: number;
   title: string,
-  image: string,
+  thumbnail: string,
   genre: string,
   platform: string,
   publisher : string

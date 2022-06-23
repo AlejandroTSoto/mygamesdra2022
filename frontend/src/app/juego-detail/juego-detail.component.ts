@@ -11,7 +11,7 @@ import { JuegoService } from '../juego.service';
 export class JuegoDetailComponent implements OnInit {
   pageId=Number(this.route.snapshot.paramMap.get('id'));
   juego : Juego = {
-    id: 0, title:"", image:"", genre:"", platform: "", publisher: ""
+    id: 0, title:"", thumbnail:"", genre:"", platform: "", publisher: ""
   }
   image: any;
 
