@@ -10,11 +10,15 @@ export class JuegoService {
 
   /*
   Para solucionar el problema con la API, hacemos uso de la direccion que esta delante de la direccion API
-  Antes de poder usar la API, ponemos la direccion de delante sola en el buscador para poder activarlo de forma tempmoral
+  Antes de poder usar la API, ponemos la direccion de delante sola en el buscador para poder activarlo de forma temporal
   */
   private url: string = 'https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games'
   private urlFiltros: string = 'https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games?category='
-  private urlBackend: string = 'http://localhost:8080/api'
+  private urlBackend: string = 'http://localhost:8081/api'
+
+  /*
+  La direccion en la que se podrá ver /favoritos y /topJuegos será la de localhost:8081/api/lo que buscamos
+  */
 
   httpOptions = {
     headers: new HttpHeaders({
