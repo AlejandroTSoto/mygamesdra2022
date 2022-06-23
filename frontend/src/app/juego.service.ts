@@ -57,7 +57,7 @@ export class JuegoService {
 
   /* Método que traerá los top juegos que se ha realizado con el scrapping BACKEND*/
   getTopJuegos(): Observable<any> {
-    return this.http.get(`${this.urlBackend}/topJuegos`);
+    return this.http.get(`${this.urlBackend}/topJuegos/data/`);
   }
 
   /* Método que añadirá un juego a la lista de favoritos BACKEND*/

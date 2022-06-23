@@ -19,7 +19,7 @@ public class TopJuegosController {
     @Autowired
     private TopJuegosService topJuegosService;
 
-    @GetMapping("data")
+    @GetMapping("/data")
     public ResponseEntity<List<TopJuegosDto>> getTopJuegos() {
         return new ResponseEntity<List<TopJuegosDto>>(topJuegosService.retrieveTopJuegos(),
                 HttpStatus.OK);
