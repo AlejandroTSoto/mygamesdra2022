@@ -15,9 +15,7 @@ export class FavoritosComponent implements OnInit {
 
   ngOnInit(): void {
     this.juegoService.getJuegosFavoritos().subscribe(juegos => {
-      for (let juego of juegos) {
-        this.addJuego(juego);
-      }
+
     });
 
   }
@@ -27,10 +25,6 @@ export class FavoritosComponent implements OnInit {
     this.juegoService.getJuegos().subscribe(data => {
       console.log(data)
     })
-  }
-
-  addJuego(juego:Juego) {
-    this.juegos.push(juego)
   }
 
 }

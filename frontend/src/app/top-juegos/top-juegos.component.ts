@@ -10,7 +10,6 @@ export class TopJuegosComponent implements OnInit {
   topJuegos: any = [];
 
   constructor(private juegoService: JuegoService) {
-
   }
 
   ngOnInit(): void {
